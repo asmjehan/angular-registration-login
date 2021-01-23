@@ -1,7 +1,14 @@
-﻿<div class="p-4">
+<div class="p-4">
     <div class="container">
-        <h1>Hi {{user.firstName}}!</h1>
+        <h1>Hi {{user.firstName}} {{user.lastName}}!</h1>
         <p>Logged in.</p>
-        <p><a routerLink="/users">Manage Users</a></p>
+        
+    </div>
+    <div class="container">
+        <h3>Info:</h3> 
+        <p>
+            Full name: {{user.firstName}} {{user.lastName}} <br>
+            User Name: {{user.username}}
+        </p>
     </div>
 </div>
